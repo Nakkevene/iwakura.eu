@@ -8,16 +8,21 @@
   </head>
 
   <link rel="stylesheet" href="./public/styles/index.css" />
+  <script src="./public/js/cat.js"></script>
 
-  <body>
-    <div>
+  <body onload="updateCat()">
+    <div class="head">
       <h1>welcome to the wired - iwakura.eu</h1>
       <p>A. Rinne / <a href="mailto:lain@iwakura.eu">lain@iwakura.eu</a></p>
     </div>
 
     <div class="centerdiv">
-      <img alt="couldn't load image" id="catimg" />
-      <button>show another cat to our loved lain</button>
+      <img
+        alt="couldn't load image"
+        id="catimg"
+        src="./public/img/placeholder.jpg"
+      />
+      <button onclick="updateCat()">show another cat to our loved lain</button>
     </div>
 
     <footer>
